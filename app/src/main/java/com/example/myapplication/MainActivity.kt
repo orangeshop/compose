@@ -32,7 +32,9 @@ class MainActivity : ComponentActivity() {
 
 //                    cardView()
 
-                        checkBox()
+//                        checkBox()
+
+                    textField()
                 }
             }
         }
