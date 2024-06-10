@@ -30,7 +30,9 @@ class MainActivity : ComponentActivity() {
 
 //                    networkimage()
 
-                    cardView()
+//                    cardView()
+
+                        checkBox()
                 }
             }
         }
