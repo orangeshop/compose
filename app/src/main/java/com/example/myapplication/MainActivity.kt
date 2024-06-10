@@ -28,7 +28,9 @@ class MainActivity : ComponentActivity() {
 //
 //                    surface(name = "Android")
 
-                    box("Android")
+//                    box("Android")
+
+                    networkimage()
                 }
             }
         }
