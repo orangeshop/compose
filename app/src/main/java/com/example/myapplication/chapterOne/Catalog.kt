@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.chapterOne
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,27 +24,29 @@ import coil.compose.AsyncImage
 
 @Composable
 fun Catalog() {
-    val dataOne = arrayListOf<CatalogData>(CatalogData(
+    val dataOne = arrayListOf<CatalogData>(
+        CatalogData(
         ImgUrl = "https://developer.android.com/static/codelabs/jetpack-compose-animation/img/jetpack_compose_logo_with_rocket_856.png?hl=ko",
         header = "One",
         description = "image One image One image One"
-    ),CatalogData(
+    ), CatalogData(
         ImgUrl = "https://developer.android.com/static/codelabs/jetpack-compose-animation/img/jetpack_compose_logo_with_rocket_856.png?hl=ko",
         header = "One",
         description = "image One image One image One"
-    ),CatalogData(
+    ), CatalogData(
         ImgUrl = "https://developer.android.com/static/codelabs/jetpack-compose-animation/img/jetpack_compose_logo_with_rocket_856.png?hl=ko",
         header = "One",
         description = "image One image One image One"
-    ),CatalogData(
+    ), CatalogData(
         ImgUrl = "https://developer.android.com/static/codelabs/jetpack-compose-animation/img/jetpack_compose_logo_with_rocket_856.png?hl=ko",
         header = "One",
         description = "image One image One image One"
-    ),CatalogData(
+    ), CatalogData(
         ImgUrl = "https://developer.android.com/static/codelabs/jetpack-compose-animation/img/jetpack_compose_logo_with_rocket_856.png?hl=ko",
         header = "One",
         description = "image One image One image One"
-    ))
+    )
+    )
 
     Scaffold(modifier = Modifier.padding(20.dp)) {
         Surface(
