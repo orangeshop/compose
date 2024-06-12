@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.chapterOne.Catalog
 import com.example.myapplication.chapterOne.box
+import com.example.myapplication.chapterTwo.CustomDialog
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -42,7 +43,9 @@ class MainActivity : ComponentActivity() {
 
 //                    scaffold()
 
-                    Catalog()
+//                    Catalog()
+
+                    CustomDialog()
                 }
             }
 
