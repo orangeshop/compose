@@ -10,9 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.myapplication.chapterOne.Catalog
 import com.example.myapplication.chapterOne.box
-import com.example.myapplication.chapterTwo.CustomDialog
+import com.example.myapplication.chapterTwo.dropDownMenu
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -45,7 +44,8 @@ class MainActivity : ComponentActivity() {
 
 //                    Catalog()
 
-                    CustomDialog()
+//                    CustomDialog()
+                    dropDownMenu()
                 }
             }
 
