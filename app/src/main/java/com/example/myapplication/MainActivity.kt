@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.chapterOne.box
-import com.example.myapplication.chapterTwo.bottomAppBar
+import com.example.myapplication.chapterTwo.state
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -49,7 +49,9 @@ class MainActivity : ComponentActivity() {
 
 //                    snackBar()
 
-                    bottomAppBar()
+//                    bottomAppBar()
+
+                    state()
                 }
             }
 
