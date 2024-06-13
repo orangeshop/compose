@@ -30,8 +30,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.myapplication.chapterThree.LiveData.ToDoData
-import com.example.myapplication.chapterThree.LiveData.ToDoViewModel
 
 class ToDoViewModel : ViewModel(){
     private val _text = mutableStateOf("")
@@ -82,7 +80,7 @@ fun TodoTopViewModel(viewModel: ToDoViewModel = viewModel()) {
 
             LazyColumn {
                 items(viewModel.todoList, key = {it.key}) { index ->
-                    com.example.myapplication.chapterThree.LiveData.Todo(
+                    Todo(
                         index,
                         onToggle = viewModel.onToggle,
                         onDelete = viewModel.onDelete,
