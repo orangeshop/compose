@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import TodoTopLivedata
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.chapterOne.box
-import com.example.myapplication.chapterThree.TodoTopViewModel
+import com.example.myapplication.chapterThree.LiveData.TodoTopLivedata
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -59,7 +60,10 @@ class MainActivity : ComponentActivity() {
 //                    sideEffect()
 //                    TodoTop()
 
-                    TodoTopViewModel()
+//                    TodoTopViewModel()
+
+                    TodoTopLivedata()
+
                 }
             }
 

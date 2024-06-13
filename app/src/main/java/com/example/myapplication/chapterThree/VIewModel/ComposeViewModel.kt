@@ -1,4 +1,4 @@
-package com.example.myapplication.chapterThree
+package com.example.myapplication.chapterThree.VIewModel
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.layout.Column
@@ -30,6 +30,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.myapplication.chapterThree.LiveData.ToDoData
+import com.example.myapplication.chapterThree.LiveData.ToDoViewModel
 
 class ToDoViewModel : ViewModel(){
     private val _text = mutableStateOf("")
@@ -72,13 +74,16 @@ fun TodoTopViewModel(viewModel: ToDoViewModel = viewModel()) {
         Column(
             modifier = Modifier.padding(it)
         ) {
-            inputRow(viewModel.text.value,
-                { viewModel.textUpdate(it)},
-                viewModel.onSummit)
+            com.example.myapplication.chapterThree.LiveData.inputRow(
+                viewModel.text.value,
+                { viewModel.textUpdate(it) },
+                viewModel.onSummit
+            )
 
             LazyColumn {
                 items(viewModel.todoList, key = {it.key}) { index ->
-                    Todo(index,
+                    com.example.myapplication.chapterThree.LiveData.Todo(
+                        index,
                         onToggle = viewModel.onToggle,
                         onDelete = viewModel.onDelete,
                         onEdit = viewModel.onEdit
@@ -211,6 +216,6 @@ fun TodoPreview() {
 @Composable
 @Preview(showBackground = true)
 fun TodoPreview2() {
-    Todo(ToDoData(0 ,"asd", false))
+    Todo(ToDoData(0, "asd", false))
 
 }
