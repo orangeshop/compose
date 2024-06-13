@@ -8,12 +8,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.chapterOne.box
-import com.example.myapplication.chapterTwo.Animation2
-import com.example.myapplication.chapterTwo.sideEffect
+import com.example.myapplication.chapterTwo.TodoTop
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -58,7 +56,8 @@ class MainActivity : ComponentActivity() {
 //                        Animation()
 
 //                    Animation2()
-                    sideEffect()
+//                    sideEffect()
+                    TodoTop()
                 }
             }
 
